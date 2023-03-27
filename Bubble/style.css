@@ -77,36 +77,45 @@ h1 {
 
 .grid-item div:nth-child(1) {
     background-color: #ff9257;
+    color: #fff9ed;
     grid-area: um;
 }
 
 .grid-item div:nth-child(2) {
     background-color: #bfdf8c;
+    color: #7b9846;
     grid-area: dois;
 }
 
 .grid-item div:nth-child(3) {
     background-color: #d1c1ee;
+    color: #7b9846;
     grid-area: tres;
 }
 
 .grid-item div:nth-child(4) {
     background-color: #bfdf8c;
+    color: #7b9846;
     grid-area: quatro;
 }
 
 .grid-item div:nth-child(5) {
     background-color: #d1c1ee;
+    color: #7b9846;
     grid-area: cinco;
 }
 
 .grid-item div:nth-child(6) {
     background-color: #ff9257;
+    color: #fff9ed;
     grid-area: seis;
 }
 
 .col {
     border-radius: 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .img-icon {

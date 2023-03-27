@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
 }
@@ -14,6 +14,7 @@ body {
 }
 
 .container {
+
     display: grid;
     margin-top: 30px;
     grid-template-rows: auto auto;
@@ -21,10 +22,13 @@ body {
     grid-template-areas:
         'navegacao'
         'principal';
+
 }
 
 .navegacao {
     grid-area: navegacao;
+    overflow: hidden;
+
 }
 
 .principal {
@@ -34,17 +38,19 @@ body {
 nav ul {
     display: flex;
     list-style: none;
+
 }
 
 nav ul li {
     margin: 15px 30px;
+    padding: auto;
 }
 
 nav ul li a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
@@ -61,8 +67,10 @@ h1{
 }
 
 .grid-item .col {
-    width: 240px;/*280*/
-    height: 210px;/*250*/
+    width: 240px;
+    /*280*/
+    height: 210px;
+    /*250*/
     margin: 10px;
 
 }
@@ -106,7 +114,12 @@ h1{
     height: 50px;
 }
 
-.img-icon:hover{
-
+.img-icon:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
+.col:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

@@ -11,18 +11,17 @@ body {
 
 .logo {
     color: #7b9846;
+    font-family: 'Oswald', sans-serif;
 }
 
 .container {
-
     display: grid;
-    margin-top: 30px;
+    margin-top: 15px;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
     grid-template-areas:
         'navegacao'
         'principal';
-
 }
 
 .navegacao {
@@ -54,17 +53,21 @@ h1 {
     text-align: center;
 }
 
+h2{
+    font-size: 1.2em;
+}
+
 /*ul{
     padding: 0;
 }*/
 .grid-item {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-columns: auto auto auto;
     grid-template-areas:
         'um dois tres'
-        /*'meio meio meio'*/
         'quatro cinco seis';
+        font-family: 'Montserrat', sans-serif;
 }
 
 .grid-item .col {

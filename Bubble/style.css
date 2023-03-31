@@ -7,6 +7,7 @@ body {
     background: #fff9ed;
     max-width: 900px;
     min-width: 100px;
+    user-select:none;
 }
 
 .logo {
@@ -162,6 +163,5 @@ h2 {
     .grid-item div:nth-child(5) {
         background-color: #bfdf8c;
     }
-
     
 }

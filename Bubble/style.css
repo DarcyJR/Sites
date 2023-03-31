@@ -53,7 +53,7 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 1.2em;
 }
 
@@ -67,7 +67,7 @@ h2{
     grid-template-areas:
         'um dois tres'
         'quatro cinco seis';
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .grid-item .col {
@@ -134,4 +134,34 @@ h2{
 .col:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+
+    .grid-item .col {
+        width: 176px;
+        /*280*/
+        height: 153px;
+        /*250*/
+        margin: 7px;
+    }
+    .grid-item {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            'um dois'
+            'tres quatro'
+            'cinco seis';
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .grid-item div:nth-child(2) {
+        background-color: #d1c1ee;
+    }
+    .grid-item div:nth-child(5) {
+        background-color: #bfdf8c;
+    }
+
+    
 }

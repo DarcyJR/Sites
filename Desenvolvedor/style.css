@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #2e2e2e;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 120% 47.5%;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        'esquerda direita'
+        'esquerda-baixo direita-baixo';
+        
+}
+
+.lado {
+    width: 50vw;
+}
+
+.esquerda,
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*lado esquerdo*/
+
+.esquerda {
+    grid-area: esquerda;
+    background-color: #ccc;
+}
+
+.nomes {
+    text-align: center;
+}
+
+.nickname {
+    font-size: 50px;
+    margin: 20px 0 0 0;
+}
+
+.cargo {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 30px;
+    margin: 0 0 50px;
+}
+
+/*Lado esquerdo baixo*/
+
+.esquerda-baixo {
+    grid-area: esquerda-baixo;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    color: #ccc;
+    background-color: #2e2e2e;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.redes img {
+    margin: 20px;
+    width: 40px;
+}
+/*lado direito*/
+
+direita {
+    grid-area: direita;
+    background-color: #Fff;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.limitea {
+    width: 80%;
+    margin: 50px;
+}
+
+.direita p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.sobre {
+    margin: 0px 20px 0 20px;
+}
+
+/*lado direito baixo*/
+
+.direita-baixo {
+    grid-area: direita-baixo;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media(max-width: 700px){
+    .container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+            'esquerda'
+            'esquerda-baixo'
+            'direita'
+            'direita-baixo';
+    }
+    .lado {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .esquerda{
+        padding-top: 50px;
+    }
+}
+@media(max-height:800px){
+    .esquerda,
+    .direita,
+    .esquerda-baixo,
+    .direita-baixo{
+        height: auto;
+    }
+}

@@ -2,7 +2,7 @@
 
 *{
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
 }
 
 body, html{
@@ -60,6 +60,27 @@ body{
     height: 40vh;
     margin: 10px;
     border-radius: 10px;
+    
+}
+
+.fechar{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #20cd8d;
+    float: right;
+    margin: 10px;
+}
+
+.fechar::after{
+    font-size: 40px;
+    content: '+';
+    position: fixed;
+    z-index: 2;
 }
 
 .bloco-um{

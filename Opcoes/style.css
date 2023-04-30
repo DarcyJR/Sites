@@ -1,0 +1,24 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    background-color: #172627;
+    color: #20cd8d;
+}
+
+.container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloco{
+    background-color: #20cd8d;
+    width: 20%;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}

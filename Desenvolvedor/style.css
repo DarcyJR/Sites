@@ -3,31 +3,43 @@
     padding: 0;
 }
 
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
 body {
     color: #2e2e2e;
     font-family: 'PT Sans', sans-serif;
-    
 }
 
 .container {
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-rows: 120% 47.5%;
-    grid-template-columns: auto auto;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
         'esquerda direita'
         'esquerda-baixo direita-baixo';
-        
 }
 
-.lado {
-    width: 50vw;
+.imagem{
+    display: flex;
+    justify-content: center;
 }
 
 .esquerda,
-.direita {
+.direita{
+    justify-content: center;
+}
+
+.esquerda,
+.direita,
+.esquerda-baixo,
+.direita-baixo{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -44,13 +56,11 @@ body {
 
 .nickname {
     font-size: 50px;
-    margin: 20px 0 0 0;
 }
 
 .cargo {
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-size: 30px;
-    margin: 0 0 50px;
 }
 
 /*Lado esquerdo baixo*/
@@ -58,9 +68,6 @@ body {
 .esquerda-baixo {
     grid-area: esquerda-baixo;
     background-color: #ccc;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .button {
@@ -80,6 +87,7 @@ a {
     margin: 20px;
     width: 40px;
 }
+
 /*lado direito*/
 
 direita {
@@ -99,48 +107,37 @@ h1 {
 .direita p {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
+    margin: 10px;
 }
 
-.sobre {
-    margin: 0px 20px 0 20px;
-}
+
 
 /*lado direito baixo*/
 
 .direita-baixo {
     grid-area: direita-baixo;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
-@media(max-width: 700px){
+@media(max-width: 1000px){
+    .direita p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 700px) {
     .container {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: auto;
+        grid-template-rows: 70vh 30vh 70vh 30vh;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            'esquerda'
+            'esquerda' 
             'esquerda-baixo'
             'direita'
             'direita-baixo';
-    }
-    .lado {
-        width: 100vw;
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .esquerda{
-        padding-top: 50px;
+    }    
+    .direita p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
     }
 }
-@media(max-height:800px){
-    .esquerda,
-    .direita,
-    .esquerda-baixo,
-    .direita-baixo{
-        height: auto;
-    }
-}
+

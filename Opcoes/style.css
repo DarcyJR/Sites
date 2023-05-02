@@ -60,7 +60,6 @@ body{
     height: 40vh;
     margin: 10px;
     border-radius: 10px;
-    
 }
 
 .fechar{
@@ -98,7 +97,17 @@ body{
 .bloco-interno-um{
     grid-area: interno-um;
     background-color: #172627;
-    width: 100%;   
+    width: 100%; 
+    display: flex; 
+}
+
+.faixa{
+    width: 3px;
+    height: 36px;
+    margin: 0 0 0 0;
+    background-color: #20cd8d;
+    border-radius: 20%;
+
 }
 
 .bloco-interno-dois{
@@ -107,4 +116,9 @@ body{
     border-radius: 10px;
     background-color: #20cd8d;
     /*background-color: bisque;*/
+}
+
+.bloco:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
